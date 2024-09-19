@@ -1,0 +1,62 @@
+.navbar-custom{
+    padding: 21px 0 39px;
+.navbar-brand{
+    margin: 0;
+}
+.navbar-nav{
+    margin-top: 2px;
+}
+
+    .nav-item{
+        .nav-link{
+            padding: 12px 21px;
+            color: $text-cl;
+            &:hover{
+                text-decoration: none;
+                color: $primary-cl;
+            }
+        }
+    }
+    .navbar-toggler{
+        border: none;
+        border-radius: 0;
+        padding: 0;
+        box-shadow: none;
+        width: 28px;
+    }
+    .navbar-toggler-icon{
+        position: relative;
+        background: $text-cl;
+        height: 2.5px;
+        margin: -26px 0 0 0;
+        &::before,
+        &::after{
+            content: "";
+            position: absolute;
+            width: 100%;
+            background-color: $text-cl;
+            height: 2.5px;
+            top: 12px;
+            left: 0;
+            transition: 0.3s;
+        }
+    
+         &::after{
+            top: 23px;
+         }
+    }
+         [aria-expanded="true"]{
+            .navbar-toggler-icon{
+                background-color: transparent;
+                 
+                &::before{
+                    transform: rotate(45deg);
+                }
+                &::after{
+                    transform: rotate(-45deg);
+                    top: 12px;
+                }
+            } 
+         }
+}
+

@@ -114,7 +114,105 @@ ul li:not([class]) ul li::before {
   padding: 19px 20px;
 }
 
+.navbar-custom {
+  padding: 21px 0 39px;
+}
+.navbar-custom .navbar-brand {
+  margin: 0;
+}
+.navbar-custom .navbar-nav {
+  margin-top: 2px;
+}
+.navbar-custom .nav-item .nav-link {
+  padding: 12px 21px;
+  color: #fff;
+}
+.navbar-custom .nav-item .nav-link:hover {
+  text-decoration: none;
+  color: #E58D35;
+}
+.navbar-custom .navbar-toggler {
+  border: none;
+  border-radius: 0;
+  padding: 0;
+  box-shadow: none;
+  width: 28px;
+}
+.navbar-custom .navbar-toggler-icon {
+  position: relative;
+  background: #fff;
+  height: 2.5px;
+  margin: -26px 0 0 0;
+}
+.navbar-custom .navbar-toggler-icon::before, .navbar-custom .navbar-toggler-icon::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  background-color: #fff;
+  height: 2.5px;
+  top: 12px;
+  left: 0;
+  transition: 0.3s;
+}
+.navbar-custom .navbar-toggler-icon::after {
+  top: 23px;
+}
+.navbar-custom [aria-expanded=true] .navbar-toggler-icon {
+  background-color: transparent;
+}
+.navbar-custom [aria-expanded=true] .navbar-toggler-icon::before {
+  transform: rotate(45deg);
+}
+.navbar-custom [aria-expanded=true] .navbar-toggler-icon::after {
+  transform: rotate(-45deg);
+  top: 12px;
+}
+
 h1 {
   color: blue;
+}
+
+@media screen and (max-width: 1199.99px) {
+  .navbar-custom .nav-item .nav-link {
+    padding: 12px 18px;
+  }
+}
+@media screen and (max-width: 991.99px) {
+  .container {
+    padding: 0 20px;
+  }
+  .navbar-brand img {
+    max-width: 126px;
+  }
+  .navbar-custom {
+    padding: 13px 0 24px;
+  }
+  .navbar-custom .navbar-brand img {
+    max-width: 126px;
+  }
+  .navbar-custom .navbar-collapse {
+    text-align: center;
+    background-color: #363A4D;
+    margin: 0 -22px 0;
+    transform: translate(0, 10px);
+    box-shadow: 14px 22px 40px rgba(30, 35, 66, 0.4);
+  }
+  .navbar-custom .navbar-collapse .btn {
+    margin-bottom: 60px !important;
+    font-weight: 600;
+    font-size: 16px;
+    padding: 21px 81px;
+  }
+  .navbar-custom .navbar-nav {
+    padding: 34px 0 23px;
+  }
+  .navbar-custom .nav-item .nav-link {
+    line-height: 222%;
+    font-size: 24px;
+    font-weight: 400;
+    color: #fff;
+    padding: 0;
+    margin-bottom: 11px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
