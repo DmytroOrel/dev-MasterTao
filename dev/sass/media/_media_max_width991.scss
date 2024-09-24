@@ -12,7 +12,7 @@
 
 
     .navbar-custom{
-        padding: 13px 0 24px;
+        padding: 13px 0;
 
         .navbar-brand{
             img{
@@ -49,6 +49,36 @@
                 padding: 0;
                 margin-bottom: 11px;
             }    
+        }
+    }
+    .banner{
+        .swiper-slide{
+            &::before{
+                content: "";
+                position: absolute;
+                background-color: #04051199;
+                left: 0;
+                top: 0;
+                height: 100%;
+                width: 100%;
+                z-index: -1;
+            }
+        }
+        .container{
+            align-items: center;
+            text-align: center;
+            min-height: 649px;
+            padding: 0 12px 54px;
+        }
+        &-title{
+            font-size: 32px;
+            max-width: 300px;
+            margin-bottom: 10px;
+        }
+        &-description{
+            font-size: 16px;
+            max-width: 265px;
+            margin-bottom: 18px;
         }
     }
 }

@@ -1,10 +1,14 @@
 .banner{
+    .swiper-slide{
+        background-position: center;
+    }
     .container{
         min-height: 700px;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: flex-start;
+        padding: 0 12px 62px;
     }
     &-title{
         font-size: 56px;
@@ -20,5 +24,21 @@
         line-height: 135%;
         max-width: 320px;
         margin-bottom: 37px;
+    }
+    .swiper-button-prev,
+    .swiper-button-next {
+        max-width: 1598px;
+        padding: 0 50px;
+        width: 100%;
+        left: 50%;
+        transform: translate(-50%, 0);
+        justify-content: flex-start;
+        color: $text-cl;
+        &:hover{
+            color: $secondary-cl;
+        }
+    }
+    .swiper-button-next {
+        justify-content: flex-end;
     }
 }
