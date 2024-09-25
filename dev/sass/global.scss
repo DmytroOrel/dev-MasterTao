@@ -109,3 +109,18 @@ ul{
   .swiper-pagination-bullets.swiper-pagination-horizontal{
     bottom: 43px;
   }
+  .template-title{
+    position: relative;
+    text-align: center;
+    padding: 24px;
+    h2{
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 125%;
+        text-transform: uppercase;
+    }
+    h4{
+        font-weight: 400;
+        font-size: 24px
+    }
+  }
