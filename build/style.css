@@ -219,7 +219,7 @@ ul li:not([class]) ul li::before {
   font-weight: 700;
   line-height: 126%;
   text-transform: uppercase;
-  max-width: 463px;
+  max-width: 470px;
   margin-bottom: 8px;
 }
 .banner-description {
@@ -231,6 +231,7 @@ ul li:not([class]) ul li::before {
 }
 .banner .swiper-button-prev,
 .banner .swiper-button-next {
+  height: 0;
   max-width: 1598px;
   padding: 0 50px;
   width: 100%;
