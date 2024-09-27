@@ -152,17 +152,50 @@ ul li:not([class]) ul li::before {
 .template-title {
   position: relative;
   text-align: center;
-  padding: 24px;
+  padding: 48px;
+}
+.template-title::before {
+  content: "";
+  position: absolute;
+  bottom: 33px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  height: 2px;
+  width: 85px;
+  background-color: #89C249;
 }
 .template-title h2 {
   font-weight: 700;
   font-size: 36px;
   line-height: 125%;
   text-transform: uppercase;
+  margin-bottom: 6px;
 }
 .template-title h4 {
   font-weight: 400;
   font-size: 24px;
+}
+.template-title.case-2 {
+  text-align: left;
+}
+.template-title.case-2::before {
+  left: 0;
+  transform: none;
+}
+.template-title.case-3 {
+  max-width: 715px;
+  text-align: left;
+}
+.template-title.case-3:before {
+  display: none;
+}
+.template-title.case-3 h2::after {
+  content: "";
+  display: inline-block;
+  background-color: #89C249;
+  width: 85px;
+  height: 2px;
+  margin: 12px 15px;
 }
 
 .navbar-custom {
