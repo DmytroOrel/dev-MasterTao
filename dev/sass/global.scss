@@ -5,6 +5,9 @@ body{
     min-height: 100vh;
     color: $text-cl;
 }
+section{
+    padding: $section-padding;
+}
 a{
     color: $primary-cl;
     text-decoration: none;
@@ -78,7 +81,7 @@ ul{
 }
 .btn-lg{
     font-size: 16px;
-    padding: 19px 20px;
+    padding: 20px 24px;
 }
 
 .container-xxl {
@@ -86,11 +89,12 @@ ul{
 }
 .container{
     max-width: 1164px;
+    position: relative;
   }
 .swiper-pagination-bullet {
     width: 8px;
     height: 8px;
-    border: 2px solid white;
+    border: 2px solid $text-cl;
     background-color: transparent;
     opacity: 1;
   }  
@@ -112,7 +116,7 @@ ul{
   .template-title{
     position: relative;
     text-align: center;
-    padding: 48px;
+    padding-bottom: 48px;
     &::before{
         content: "";
         position: absolute;
@@ -223,14 +227,7 @@ input[type="file"] + label{
         color:$secondary-cl;
     }
 }
-.fill-name{
-    position: absolute;
-    font-size: 15px;
-    font-weight: 400;
-    line-height: 126%;
-    top: 12px;
-    left: 0;
-}
+
 
 
 
