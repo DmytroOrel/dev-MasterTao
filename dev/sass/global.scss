@@ -5,9 +5,6 @@ body{
     min-height: 100vh;
     color: $text-cl;
 }
-section{
-    padding: $section-padding;
-}
 a{
     color: $primary-cl;
     text-decoration: none;
@@ -113,6 +110,7 @@ ul{
   .swiper-pagination-bullets.swiper-pagination-horizontal{
     bottom: 43px;
   }
+
   .template-title{
     position: relative;
     text-align: center;
@@ -138,31 +136,8 @@ ul{
         font-weight: 400;
         font-size: 24px
     }
-    &.case-2{
-        text-align: left;
-        &::before{
-            left: 0;
-            transform: none;
-        }
-    }
-    &.case-3{
-        max-width: 715px;
-        text-align: left;
-        &:before{
-            display: none;
-        }
-        h2{
-            &::after{
-                content: "";
-                display: inline-block;
-                background-color: $secondary-cl;
-                width: 85px;
-                height: 2px;
-                margin: 12px 15px;
-            }
-        }
-    }
   }
+
 
 
 

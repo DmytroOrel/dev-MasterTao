@@ -50,6 +50,9 @@
         }
     }
     .banner{
+        section{
+            padding: 0 !important;
+        }
         .swiper-slide{
             &::before{
                 content: "";
@@ -82,29 +85,31 @@
         .swiper-button-next{
             display: none;
         }    
-        section{
-            padding: $padding-mobile;
-        }    
     }
     .calculation{
-        section{
-            padding: $padding-mobile;
+        .calculation-img{
+            display: none;
+        }   
+        .calculation-form{
+            margin: 0 auto;
+        }  
+    }
+    .template-title{
+        h2{
+            font-size: 24px;
+            line-height: 124.5%;
         }
-    .calculation-form{
-        margin: 0 auto;
-        padding: 52px 30px 34px;
+        h4{
+            font-size: 16px;
+            line-height: 124.5%;
+        }
+        &::before{
+            bottom: 28px;
+        }
+        &.case-3{
+            &::before{
+                bottom: 32px;
+            }
+        }
     }
-    .form-row{
-        flex-direction: column;
-        gap: 0;
-    }
-    .calculation-img{
-        display: none;
-    }
-    section{
-        padding: 0;
-    }
-} 
 }
-
-
