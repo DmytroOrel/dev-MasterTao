@@ -45,6 +45,7 @@ body {
   flex-direction: column;
   background-color: #282B38;
   min-height: 100vh;
+  font-family: "ProximaNova";
   color: #fff;
 }
 
@@ -79,7 +80,7 @@ ul li:not([class]) ul li::before {
   border-radius: 90px;
   line-height: 146%;
   font-weight: 600;
-  padding: 13px 23px;
+  padding: 13px 26px;
   border: 1px solid #E58D35;
 }
 .btn:hover {
@@ -226,6 +227,23 @@ input[type=file] + label:focus, input[type=file] + label:active {
   color: #89C249;
 }
 
+.bg-section {
+  position: relative;
+}
+.bg-section::before {
+  content: "";
+  position: absolute;
+  background: #363A4D;
+  max-width: 1820px;
+  width: calc(100% - 100px);
+  height: 100%;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+  border-radius: 20px;
+  z-index: -1;
+}
+
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
   -webkit-appearance: none;
@@ -245,7 +263,7 @@ input[type=number] {
   margin-top: 2px;
 }
 .navbar-custom .nav-item .nav-link {
-  padding: 12px 21px;
+  padding: 12px 23px;
   color: #fff;
 }
 .navbar-custom .nav-item .nav-link:hover {
@@ -313,7 +331,7 @@ input[type=number] {
   font-weight: 300;
   line-height: 135%;
   max-width: 320px;
-  margin-bottom: 37px;
+  margin-bottom: 31px;
 }
 .banner .swiper-button-prev,
 .banner .swiper-button-next {
@@ -335,7 +353,7 @@ input[type=number] {
 }
 
 .calculation {
-  padding: 98px 0 100px;
+  padding: 98px 0 113px;
 }
 .calculation .template-title {
   padding-bottom: 53px;
@@ -417,12 +435,12 @@ input[type=number] {
   margin-top: 19px;
 }
 
-.fill-name {
+.file-name {
   position: absolute;
   font-size: 15px;
   font-weight: 400;
   line-height: 126%;
-  top: 12px;
+  top: 15px;
   left: 0;
 }
 
@@ -523,13 +541,13 @@ input[type=number] {
   }
   .banner-title {
     font-size: 32px;
-    max-width: 300px;
+    max-width: 297px;
     margin-bottom: 10px;
   }
   .banner-description {
     font-size: 16px;
     max-width: 265px;
-    margin-bottom: 18px;
+    margin-bottom: 15px;
   }
   .banner .swiper-button-prev,
   .banner .swiper-button-next {
@@ -577,7 +595,7 @@ input[type=number] {
     flex-direction: column;
     gap: 0;
   }
-  .calculation .form-row .form-column .input-box .fill-name {
+  .calculation .form-row .form-column .input-box .file-name {
     top: 1px;
   }
   .calculation .control-box:first-child {
@@ -587,7 +605,7 @@ input[type=number] {
     margin-bottom: 16px;
   }
   .calculation input[type=file] + label {
-    margin-top: 35px;
+    margin-top: 34px;
   }
 }
 /*# sourceMappingURL=style.css.map */

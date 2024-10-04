@@ -19,7 +19,7 @@
         gap: 0;
         .form-column{
             .input-box{
-                .fill-name{
+                .file-name{
                     top: 1px;
                 }
             }
@@ -36,7 +36,7 @@
     input{
         &[type="file"]
         + label{
-            margin-top: 35px;
+            margin-top: 34px;
         }
     }
 }   

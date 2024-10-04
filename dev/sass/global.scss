@@ -3,6 +3,7 @@ body{
     flex-direction: column;
     background-color: $body-bg;
     min-height: 100vh;
+    font-family: 'ProximaNova';
     color: $text-cl;
 }
 a{
@@ -39,7 +40,7 @@ ul{
     border-radius: 90px;
     line-height: 146%;
     font-weight: 600;
-    padding: 13px 23px;
+    padding: 13px 26px;
     border: 1px solid $primary-cl;  
     
    &:hover{
@@ -203,7 +204,22 @@ input[type="file"] + label{
     }
 }
 
-
+.bg-section{
+    position: relative;
+    &::before{
+        content: "";
+        position: absolute;
+        background: $section-bg;
+        max-width: 1820px;
+        width: calc(100% - 100px);
+        height: 100%;
+        top: 0;
+        left: 50%;
+        transform: translate(-50%, 0);
+        border-radius: 20px;
+        z-index: -1;
+    }
+}
 
 
 
