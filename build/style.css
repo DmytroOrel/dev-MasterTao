@@ -417,7 +417,7 @@ input[type=number] {
   margin-top: 19px;
 }
 
-.fill-name {
+.file-name {
   position: absolute;
   font-size: 15px;
   font-weight: 400;
@@ -577,7 +577,7 @@ input[type=number] {
     flex-direction: column;
     gap: 0;
   }
-  .calculation .form-row .form-column .input-box .fill-name {
+  .calculation .form-row .form-column .input-box .file-name {
     top: 1px;
   }
   .calculation .control-box:first-child {
