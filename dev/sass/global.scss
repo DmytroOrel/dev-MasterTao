@@ -206,6 +206,8 @@ input[type="file"] + label{
 
 .bg-section{
     position: relative;
+    padding-left: 88px;
+    padding-right: 88px;
     &::before{
         content: "";
         position: absolute;

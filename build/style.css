@@ -229,6 +229,8 @@ input[type=file] + label:focus, input[type=file] + label:active {
 
 .bg-section {
   position: relative;
+  padding-left: 88px;
+  padding-right: 88px;
 }
 .bg-section::before {
   content: "";
@@ -521,7 +523,7 @@ input[type=number] {
     margin-bottom: 11px;
   }
   .banner section {
-    padding: 0 !important;
+    padding: 0;
   }
   .banner .swiper-slide::before {
     content: "";

@@ -51,7 +51,7 @@
     }
     .banner{
         section{
-            padding: 0 !important;
+            padding: 0;
         }
         .swiper-slide{
             &::before{
@@ -112,4 +112,15 @@
             }
         }
     }
+    // section{
+    //     padding: $padding-mobile;
+    //     &.bg-section{
+    //         padding-left: 0;
+    //         padding-right: 0;
+    //         &::before{
+    //             width: 100%;
+    //             border-radius: 0;
+    //         }
+    //     }
+    // }
 }

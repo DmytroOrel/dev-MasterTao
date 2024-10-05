@@ -26,9 +26,6 @@ typeFile.forEach(item => {
 
 
 
-
-
-
 const cat = {
     name: "Murka",
     old: 3,
