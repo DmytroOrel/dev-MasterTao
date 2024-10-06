@@ -95,6 +95,9 @@ ul{
     border: 2px solid $text-cl;
     background-color: transparent;
     opacity: 1;
+    &  .swiper-pagination-bullet-active{
+        background-color: $text-cl;
+      }    
   }  
   .swiper-pagination-bullet-active{
     background-color: $text-cl;
@@ -107,11 +110,6 @@ ul{
   .swiper-pagination.swiper-pagination-bullets.swiper-pagination-horizontal{
     line-height: 0;
   }
-  .swiper-horizontal>.swiper-pagination-bullets, 
-  .swiper-pagination-bullets.swiper-pagination-horizontal{
-    bottom: 43px;
-  }
-
   .template-title{
     position: relative;
     text-align: center;

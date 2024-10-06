@@ -33,6 +33,21 @@
       }
   }
   }
+  #advantages{
+    padding-top: 18px;
+    width: calc(100% + 28px);
+    margin: 0 -12px;
+    .swiper-wrapper{
+        flex-wrap: wrap;
+    }
+    .advantage{
+        max-width: 263px;
+        width: 100%;
+    }
+    .swiper-pagination{
+        display: none;
+    }
+  }
 
   section{
     padding: $section-padding;

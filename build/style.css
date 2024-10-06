@@ -131,6 +131,9 @@ ul li:not([class]) ul li::before {
   background-color: transparent;
   opacity: 1;
 }
+.swiper-pagination-bullet .swiper-pagination-bullet-active {
+  background-color: #fff;
+}
 
 .swiper-pagination-bullet-active {
   background-color: #fff;
@@ -144,11 +147,6 @@ ul li:not([class]) ul li::before {
 
 .swiper-pagination.swiper-pagination-bullets.swiper-pagination-horizontal {
   line-height: 0;
-}
-
-.swiper-horizontal > .swiper-pagination-bullets,
-.swiper-pagination-bullets.swiper-pagination-horizontal {
-  bottom: 43px;
 }
 
 .template-title {
@@ -353,6 +351,10 @@ input[type=number] {
 .banner .swiper-button-next {
   justify-content: flex-end;
 }
+.banner .swiper-horizontal > .swiper-pagination-bullets,
+.banner .swiper-pagination-bullets.swiper-pagination-horizontal {
+  bottom: 43px;
+}
 
 .calculation {
   padding: 98px 0 113px;
@@ -446,6 +448,42 @@ input[type=number] {
   left: 0;
 }
 
+.advantages {
+  padding-bottom: 65px;
+}
+.advantages .row {
+  padding-top: 17px;
+}
+
+.advantage {
+  min-height: 201px;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 26px;
+}
+.advantage .advantage-img {
+  display: inline-block;
+  border: 1px solid #6C6F7F;
+  border-radius: 50%;
+  padding: 9px;
+  margin-bottom: 22px;
+}
+.advantage img {
+  width: 93px;
+  height: 93px;
+  background-color: #89C249;
+  border-radius: 50%;
+  object-fit: scale-down;
+}
+
+.advantage-description {
+  margin: 0;
+  font-size: 18px;
+  line-height: 124.5%;
+  max-width: 263px;
+  margin: 0 auto;
+}
+
 @media (min-width: 992px) {
   .banner {
     padding: 0 12px;
@@ -476,6 +514,21 @@ input[type=number] {
     height: 2px;
     margin: 12px 15px;
   }
+  #advantages {
+    padding-top: 18px;
+    width: calc(100% + 28px);
+    margin: 0 -12px;
+  }
+  #advantages .swiper-wrapper {
+    flex-wrap: wrap;
+  }
+  #advantages .advantage {
+    max-width: 263px;
+    width: 100%;
+  }
+  #advantages .swiper-pagination {
+    display: none;
+  }
   section {
     padding: 90px 0 100px;
   }
@@ -488,6 +541,17 @@ input[type=number] {
 @media screen and (max-width: 991.9px) {
   .container {
     padding: 0 20px;
+  }
+  section {
+    padding: 54px 0 60px;
+  }
+  section.bg-section {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  section.bg-section::before {
+    width: 100%;
+    border-radius: 0;
   }
   .navbar-brand img {
     max-width: 126px;
@@ -522,7 +586,7 @@ input[type=number] {
     padding: 0;
     margin-bottom: 11px;
   }
-  .banner section {
+  .banner {
     padding: 0;
   }
   .banner .swiper-slide::before {
@@ -555,11 +619,24 @@ input[type=number] {
   .banner .swiper-button-next {
     display: none;
   }
+  .calculation {
+    margin-bottom: 38px;
+  }
   .calculation .calculation-img {
     display: none;
   }
   .calculation .calculation-form {
     margin: 0 auto;
+  }
+  .advantages {
+    padding: 54px 0 60px;
+  }
+  .advantages .swiper {
+    padding-top: 16px;
+    overflow: visible;
+  }
+  .advantages .swiper-horizontal > .swiper-pagination-bullets, .advantages .swiper-pagination-bullets.swiper-pagination-horizontal, .advantages .swiper-pagination-custom, .advantages .swiper-pagination-fraction {
+    bottom: -7px;
   }
   .template-title h2 {
     font-size: 24px;
@@ -578,7 +655,10 @@ input[type=number] {
 }
 @media screen and (max-width: 767.9px) {
   .calculation {
-    padding: 54px 0 60px;
+    padding: 0;
+  }
+  .calculation .template-title {
+    padding: 55px 0 52px;
   }
   .calculation .calculation-form {
     margin: 22px auto;

@@ -1,4 +1,4 @@
-const swiper = new Swiper('.swiper', {
+const swiper = new Swiper('#banner-slider', {
   // Optional parameters
   direction: 'horizontal',
   loop: true,
@@ -6,6 +6,8 @@ const swiper = new Swiper('.swiper', {
   // If we need pagination
   pagination: {
     el: '.swiper-pagination',
+    clickable: true,
+    enable: true,
   },
 
   // Navigation arrows
@@ -15,6 +17,34 @@ const swiper = new Swiper('.swiper', {
   },
 });
 
+const swiperAdvantages = new Swiper('#advantages', {
+  loop: true,
+  slidesPreView: 1,
+  simulateTouch: true,
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+    enable: true,
+  },
+  breakpoints:{
+    1025: {
+      spaceBetween: 0,
+      loop: false,
+      slidesPerGround: 8,
+      simulateTouch: false,
+      pagination: {
+        enable: false,
+        el: '.swiper-pagination',
+      }
+    }
+  }
+});
+
+
+
+
+
+
 const typeFile = document.querySelectorAll('.custom-file')
 
 typeFile.forEach(item => {
@@ -23,27 +53,3 @@ typeFile.forEach(item => {
     fileName.innerHTML = item.files[0].name;
   })
 })
-
-
-
-const cat = {
-    name: "Murka",
-    old: 3,
-    color: "white",
-    parents: {
-      mother: "Basya",
-      father: "Arsen"
-    }
-  }
-  const dog = {
-    name: "Mila",
-    old: 1,
-    color: "grey",
-    parents: {
-      mother: "Senna",
-      old: 3,
-      father: "Jack",
-      old: 4
-    }
-  }
-  

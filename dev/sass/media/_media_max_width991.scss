@@ -2,12 +2,29 @@
     .container{
         padding: 0 20px;
     }
+
+
+
+
+    section{
+        padding: $padding-mobile;
+        &.bg-section{
+            padding-left: 0;
+            padding-right: 0;
+            &::before{
+                width: 100%;
+                border-radius: 0;
+            }
+        }
+    }
+
+
+
     .navbar-brand{
         img{
             max-width: 126px;
         }
     }
-
 
     .navbar-custom{
         padding: 13px 0;
@@ -49,10 +66,18 @@
             }    
         }
     }
+
+
+
+
+
+
+
+
+
+
     .banner{
-        section{
-            padding: 0;
-        }
+        padding: 0;
         .swiper-slide{
             &::before{
                 content: "";
@@ -86,7 +111,17 @@
             display: none;
         }    
     }
+
+
+
+
+
+
+
+
+
     .calculation{
+        margin-bottom: 38px;
         .calculation-img{
             display: none;
         }   
@@ -94,6 +129,25 @@
             margin: 0 auto;
         }  
     }
+
+
+.advantages{
+    padding: $padding-mobile;
+    .swiper{
+        padding-top: 16px;
+        overflow: visible;
+    }
+    .swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction{
+        bottom: -7px;
+    }
+}
+
+
+
+
+
+
+
     .template-title{
         h2{
             font-size: 24px;
@@ -112,15 +166,5 @@
             }
         }
     }
-    // section{
-    //     padding: $padding-mobile;
-    //     &.bg-section{
-    //         padding-left: 0;
-    //         padding-right: 0;
-    //         &::before{
-    //             width: 100%;
-    //             border-radius: 0;
-    //         }
-    //     }
-    // }
+
 }
