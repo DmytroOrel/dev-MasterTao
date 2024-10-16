@@ -1,3 +1,14 @@
+@media screen and (max-width: 861px) {
+    .delivery{
+        .swiper-carousel{
+            max-width: 360px;
+            padding-bottom: 50px;
+        }
+        .swiper-nav{
+            max-width: 552px;
+        }
+    }
+}
 @media screen and (max-width: 767.9px) {
     .calculation{
         padding: 0;
@@ -43,4 +54,34 @@
         }
     }
 }   
+
+
+.delivery{
+    .swiper-nav{
+        display: none;
+    }
+}
+
+
+
+.delivery{ 
+    .template-title {
+      margin-bottom: 3px;
+  }
+  .swiper-carousel{
+  .card{
+      .card-option{
+          margin: 0 0 26px;
+      }
+      .btn-row{
+          .btn{
+              min-width: 138px;
+              padding: 13px 8px;
+          }
+      }
+    }
+  }
+}  
+
+
 }

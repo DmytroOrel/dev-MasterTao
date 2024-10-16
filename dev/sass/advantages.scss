@@ -1,14 +1,15 @@
 .advantages{
-    padding-bottom: 65px;
+    padding-bottom: 68px;
     .row{
-        padding-top: 17px;
+        padding-top: 15px;
     }
 }
 .advantage{
     min-height: 201px;
-    margin: 0 auto;
     text-align: center;
-    margin-bottom: 26px;
+    max-width: 263px;    
+    margin: 0 auto 26px;
+
     .advantage-img{
         display: inline-block;
         border: 1px solid $color-secondary;
@@ -16,6 +17,7 @@
         padding: 9px;
         margin-bottom: 22px;
     }
+    
     img{
         width: 93px;
         height: 93px;

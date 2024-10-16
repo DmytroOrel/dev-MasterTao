@@ -1,3 +1,11 @@
 @media screen and (min-width: 768px) {
-
+.delivery{
+    .swiper-pagination.swiper-pagination-bullets.swiper-pagination-horizontal{
+        display: none;
+    }
+}
+.calculation{
+    section{
+        padding: 94px 0 100px;}
+}
 }

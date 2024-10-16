@@ -1,0 +1,109 @@
+.delivery{
+    position: relative;
+    .template-title{
+        margin-bottom: 15px;
+    }
+    .swiper-carousel{
+    .card{
+        border: none;
+        color: $text-cl;
+        padding: 0 20px 27px;
+        background-color: $section-bg;
+        border-radius: 20px;
+        overflow: hidden;
+        min-height: 482px;
+        
+        .img-box{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 -20px;
+            min-height: 226px;
+            img{
+                object-fit: contain;
+                height: 229px;
+            }
+        }
+        .title-card{
+            font-size: 22px;
+            font-weight: 700;
+            text-align: center;
+            margin-top: 28px;
+            margin-bottom: 12px;
+            letter-spacing: 1px;
+        }
+        &-option {
+            display: flex;
+            margin: 0 0 27px;
+            padding: 0;
+            gap: 30px;
+            justify-content: center;
+            .option-item{
+                list-style: none;
+                img{
+                    margin-right: 10px;
+                }
+            }
+        }
+        &-price{
+            font-weight: 400;
+            font-size: 22px;
+            line-height: 125%;
+            text-align: center;
+            color: #a3a3a3;
+            margin-bottom: 24px;
+            letter-spacing: -1px;
+            b{
+                font-weight: 700;
+                font-size: 45px;
+                color: $text-cl;
+            }
+            span{
+                &:last-child{
+                    color: $text-cl;
+                }
+            }
+        }
+        .btn-row{
+            display: flex;
+            gap: 14px;
+            margin-top: auto;
+            .btn{
+                width: 50%;
+                padding: 13px 15px;
+            }
+        }
+    }
+}
+}
+.swiper-button-prev-unique,
+.swiper-button-next-unique{
+    width: 46px;
+    color: $color-secondary;
+    &:hover{
+        color: $secondary-cl;
+    }
+    &.swiper-button-next{
+        right: 0;
+    }
+    &.swiper-button-prev{
+        left: 0;
+    }
+}
+.swiper-nav{
+    max-width: 1323px;
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    left: 50%;
+    bottom: 340px;
+    width: 100%;
+    transform: translate(-50%, 0);
+}
+
+.swiper-carousel{
+    .swiper-pagination{
+        background-color: red;
+        bottom: 10px;
+    }
+}
