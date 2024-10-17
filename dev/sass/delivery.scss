@@ -1,9 +1,11 @@
-.delivery{
+.delivery,
+.services{
     position: relative;
     .template-title{
         margin-bottom: 15px;
     }
-    .swiper-carousel{
+    .swiper-carousel,
+    .swiper-service{
     .card{
         border: none;
         color: $text-cl;
@@ -77,7 +79,9 @@
 }
 }
 .swiper-button-prev-unique,
-.swiper-button-next-unique{
+.swiper-button-next-unique,
+.swiper-button-prev-services,
+.swiper-button-next-services{
     width: 46px;
     color: $color-secondary;
     &:hover{
@@ -101,9 +105,9 @@
     transform: translate(-50%, 0);
 }
 
-.swiper-carousel{
+.swiper-carousel,
+.swiper-service{
     .swiper-pagination{
-        background-color: red;
         bottom: 10px;
     }
 }

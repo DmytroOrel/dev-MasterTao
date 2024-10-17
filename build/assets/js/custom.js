@@ -95,6 +95,57 @@ const swiperSwiperCarousel = new Swiper('.swiper-carousel', {
 });
 
 
+const swiperSwiperService = new Swiper('.swiper-service', {
+  speed: 400,
+  loop: true,
+  slidesPerView: 1,
+  clickable: true,
+  pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+     
+  },
+  navigation: {
+      enabled: true,
+      nextEl: '.swiper-button-next-services',
+      prevEl: '.swiper-button-prev-services'
+  },
+  // autoplay:{
+  //   delay: 3000,
+  // },
+
+  breakpoints: {
+     767: {
+      slidesPerView: 1,
+      navigation: {
+          enabled: false,
+          nextEl: '.swiper-button-next-services',
+          prevEl: '.swiper-button-prev-services'
+      },
+     },
+      861: {
+          slidesPerView: 2,
+          spaceBetween: 30,
+          navigation: {
+              enabled: true,
+              nextEl: '.swiper-button-next-services',
+              prevEl: '.swiper-button-prev-services'
+          },
+      },
+
+      1252: {
+          slidesPerView: 3,
+          spaceBetween: 30,
+          navigation: {
+              enabled: true,
+              nextEl: '.swiper-button-next-services',
+              prevEl: '.swiper-button-prev-services'
+          },
+      }
+  }
+});
+
+
 
 
 const typeFile = document.querySelectorAll('.custom-file')
