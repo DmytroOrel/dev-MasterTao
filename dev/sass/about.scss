@@ -1,0 +1,26 @@
+.about{
+    position: relative;
+    .about-text{
+        width: 555px;
+        height: 331px;
+        font-size: 18px;
+        line-height: 170%;
+        padding-top: 59px;
+        .template-title{
+            padding-bottom: 59px;
+            &::before{
+                bottom: 45px;
+            }        
+        } 
+        .upper-txt{
+            margin-bottom: 24px;
+        }        
+   }
+   .about-image{
+    position: absolute;
+    left: 602px;
+    bottom: -254px;
+}    
+}
+
+

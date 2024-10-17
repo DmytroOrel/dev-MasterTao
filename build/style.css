@@ -678,6 +678,31 @@ input[type=number] {
   height: initial;
 }
 
+.about {
+  position: relative;
+}
+.about .about-text {
+  width: 555px;
+  height: 331px;
+  font-size: 18px;
+  line-height: 170%;
+  padding-top: 59px;
+}
+.about .about-text .template-title {
+  padding-bottom: 59px;
+}
+.about .about-text .template-title::before {
+  bottom: 45px;
+}
+.about .about-text .upper-txt {
+  margin-bottom: 24px;
+}
+.about .about-image {
+  position: absolute;
+  left: 602px;
+  bottom: -254px;
+}
+
 @media screen and (min-width: 768px) {
   .delivery .swiper-pagination.swiper-pagination-bullets.swiper-pagination-horizontal,
   .services .swiper-pagination.swiper-pagination-bullets.swiper-pagination-horizontal {
