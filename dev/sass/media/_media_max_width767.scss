@@ -1,6 +1,8 @@
 @media screen and (max-width: 861px) {
-    .delivery{
-        .swiper-carousel{
+    .delivery,
+    .services{
+        .swiper-carousel,
+        .swiper-service{
             max-width: 360px;
             padding-bottom: 50px;
         }
@@ -56,7 +58,8 @@
 }   
 
 
-.delivery{
+.delivery,
+.services{
     .swiper-nav{
         display: none;
     }
@@ -82,6 +85,21 @@
     }
   }
 }  
+
+.services{
+    .template-title{
+        margin-bottom: 6px;
+    }
+    .card{
+        .card-title{
+            margin-bottom: 10px;
+        }
+        .card-description{
+            max-width: 271px;
+            font-size: 14px;
+        }
+    }
+}
 
 
 }
