@@ -681,9 +681,12 @@ input[type=number] {
 .about {
   position: relative;
 }
+.about .about-all {
+  display: flex;
+}
 .about .about-text {
-  width: 555px;
-  height: 331px;
+  min-width: 335px;
+  min-height: 357px;
   font-size: 18px;
   line-height: 170%;
   padding-top: 59px;
@@ -698,9 +701,11 @@ input[type=number] {
   margin-bottom: 24px;
 }
 .about .about-image {
-  position: absolute;
-  left: 602px;
-  bottom: -254px;
+  margin: 3px 3px auto auto;
+}
+.about .about-image img {
+  min-width: 290px;
+  max-width: 550px;
 }
 
 @media screen and (min-width: 768px) {
@@ -890,6 +895,21 @@ input[type=number] {
   .template-title.case-3::before {
     bottom: 32px;
   }
+  .about .about-all {
+    flex-direction: column;
+  }
+  .about .about-all .about-text {
+    width: 100%;
+  }
+  .about .about-all .about-text .lower-txt {
+    margin-bottom: 25px;
+  }
+  .about .about-all .about-image {
+    margin: 0 auto;
+  }
+  .about .about-all .about-image img {
+    height: 290px;
+  }
 }
 @media screen and (max-width: 861px) {
   .delivery .swiper-carousel,
@@ -963,6 +983,24 @@ input[type=number] {
   .services .card .card-description {
     max-width: 271px;
     font-size: 14px;
+  }
+  .about .about-all .template-title {
+    padding-bottom: 43px;
+  }
+  .about .about-all .template-title::before {
+    bottom: 25px;
+  }
+  .about .about-all .about-text {
+    font-size: 16px;
+    line-height: 149%;
+    text-align: justify;
+  }
+  .about .about-all .about-text .lower-txt {
+    margin-bottom: 38px;
+  }
+  .about .about-all .about-image {
+    min-height: 290px;
+    margin: 0 30px;
   }
 }
 /*# sourceMappingURL=style.css.map */

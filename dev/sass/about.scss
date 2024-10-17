@@ -1,8 +1,11 @@
 .about{
     position: relative;
+    .about-all{
+        display: flex;
+    }
     .about-text{
-        width: 555px;
-        height: 331px;
+        min-width: 335px;
+        min-height: 357px;
         font-size: 18px;
         line-height: 170%;
         padding-top: 59px;
@@ -17,9 +20,11 @@
         }        
    }
    .about-image{
-    position: absolute;
-    left: 602px;
-    bottom: -254px;
+    margin: 3px 3px auto auto;
+    img{
+        min-width: 290px;
+        max-width: 550px;    
+    }
 }    
 }
 

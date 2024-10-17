@@ -163,5 +163,21 @@
             }
         }
     }
-
+    .about{
+        .about-all{
+            flex-direction: column;
+            .about-text{
+             width: 100%;   
+             .lower-txt{
+                margin-bottom: 25px;
+             }
+            }
+            .about-image{
+                margin: 0 auto;
+                img{
+                    height: 290px;
+                }
+            }
+        }
+    }
 }

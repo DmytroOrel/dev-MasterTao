@@ -100,6 +100,26 @@
         }
     }
 }
-
-
+.about{
+    .about-all{
+        .template-title{
+            padding-bottom: 43px;
+            &::before{
+                bottom: 25px;
+            }
+        }
+        .about-text{
+            font-size: 16px;
+            line-height: 149%;
+            text-align: justify;
+            .lower-txt{
+                margin-bottom: 38px;
+            }
+        }
+        .about-image{
+            min-height: 290px;
+            margin: 0 30px;
+        }
+    }
+}
 }
