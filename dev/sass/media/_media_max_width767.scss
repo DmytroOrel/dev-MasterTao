@@ -122,4 +122,53 @@
         }
     }
 }
+
+
+.questions{
+.qua-elements{
+    .questions-accordion{
+        .accordion-item{
+            margin-bottom: 14px;
+            .accordion-body{
+                padding: 0px 13px 0px 21px;        
+                .accordion-text{
+                font-size: 14px;
+                line-height: 20px;
+                margin-top: -4px;
+            }
+            }
+        }
+        .accordion-button{
+            font-size: 16px;
+            line-height: 20px;
+            padding: 13px 18px 11px 21px;     
+            &::after{
+                margin-bottom: 9px;
+            }   
+        }
+    }
+    .question-form{
+        .form-qua{
+            .form-title{
+                margin: 38px 15px 8px 15px;
+                text-align: center;
+            }
+            .form-description{
+                margin: 0 15px 23px;
+                text-align: center;
+            }
+            .input-box{
+                width: 295px;
+                input{
+                    padding: 17px 20px;
+                }
+            }
+            .btn{
+                padding: 19px 42px;
+                margin: 0 20px 38px;
+            }
+        }
+    }
+}
+}
 }

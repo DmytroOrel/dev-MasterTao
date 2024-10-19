@@ -19,4 +19,11 @@
             max-width: 942px;
         }
     }
+    .questions{
+        .qua-elements{
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+    }
 }
