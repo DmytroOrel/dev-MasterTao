@@ -816,6 +816,55 @@ input[type=number] {
   padding: 20px 49px;
 }
 
+.info-start .bg-section {
+  max-height: 1265px;
+}
+.info-start .template-title {
+  margin-bottom: 57px;
+}
+.info-start .template-title::before {
+  bottom: 30px;
+}
+.info-start .first-case {
+  display: flex;
+  gap: 57px;
+}
+.info-start .first-case .first-info {
+  max-width: 528px;
+  margin-bottom: 15px;
+  padding-left: 11px;
+}
+.info-start .first-case .first-info .info-1 {
+  font-size: 17px;
+  font-weight: 300;
+  line-height: 26px;
+  margin-bottom: 29px;
+  text-align: start;
+}
+.info-start .second-case {
+  position: relative;
+  display: flex;
+  gap: 25px;
+}
+.info-start .second-case .second-info {
+  max-width: 523px;
+  padding-top: 34px;
+  padding-left: 31px;
+}
+.info-start .second-case .second-info .info-2 {
+  margin-bottom: 25px;
+  font-size: 17px;
+  font-weight: 300;
+  line-height: 26px;
+  margin-bottom: 30px;
+  text-align: start;
+}
+.info-start .btn {
+  position: relative;
+  bottom: 90px;
+  left: 603px;
+}
+
 @media screen and (min-width: 768px) {
   .delivery .swiper-pagination.swiper-pagination-bullets.swiper-pagination-horizontal,
   .services .swiper-pagination.swiper-pagination-bullets.swiper-pagination-horizontal {
