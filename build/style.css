@@ -708,6 +708,114 @@ input[type=number] {
   max-width: 550px;
 }
 
+.questions {
+  padding: 0;
+}
+.questions .qua-elements {
+  display: flex;
+  gap: 34px;
+}
+.questions .qua-elements .template-title {
+  margin-bottom: 9px;
+}
+
+.questions-accordion {
+  max-width: 716px;
+  width: 100%;
+}
+.questions-accordion .accordion .accordion-item {
+  box-shadow: none;
+  border: 1px solid #6C6F7F;
+  border-radius: 10px;
+  background-color: #fff;
+  margin-bottom: 14px;
+  overflow: hidden;
+}
+.questions-accordion .accordion .accordion-item .accordion-text {
+  font-size: 17px;
+  font-weight: 300;
+  line-height: 24px;
+  color: #282B38;
+  margin-top: -7px;
+}
+.questions-accordion .accordion .accordion-button:not(.collapsed) {
+  background-color: #fff;
+  color: #282B38;
+  transition: 0.2s;
+}
+.questions-accordion .accordion .accordion-button {
+  background-color: #282B38;
+  color: #fff;
+  box-shadow: none;
+  padding: 19px 16px 18px 35px;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 22px;
+}
+.questions-accordion .accordion .accordion-button::after {
+  content: "";
+  background: url(../assets/img/arrow-close-1.svg) center no-repeat;
+  width: 27px;
+  height: 27px;
+}
+.questions-accordion .accordion .accordion-button:not(.collapsed) {
+  background-color: #fff;
+  color: #282B38;
+}
+.questions-accordion .accordion .accordion-button:not(.collapsed)::after {
+  background: url(../assets/img/arrow-open-1.svg) center no-repeat;
+  transform: rotate(360deg);
+  transition: 0.4s;
+}
+.questions-accordion .accordion .accordion-body {
+  padding: 2px 30px 6px 37px;
+}
+
+.question-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.question-form .form-qua {
+  max-width: 390px;
+  max-height: 553px;
+  background-color: #363A4D;
+  border-radius: 20px;
+}
+.question-form .form-qua .form-title {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 30px;
+  margin: 39px 45px 17px 42px;
+}
+.question-form .form-qua .form-description {
+  font-size: 17px;
+  font-weight: 300;
+  line-height: 21px;
+  margin: -10px 45px 23px 42px;
+}
+.question-form .form-qua .input-box,
+.question-form .form-qua .input-box-lg {
+  margin-bottom: 14px;
+  max-width: 310px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.question-form .form-qua .input-box input,
+.question-form .form-qua .input-box-lg input {
+  padding: 17px 10px;
+}
+.question-form .form-qua .input-box-lg {
+  margin-bottom: 25px;
+}
+.question-form .form-qua .input-box-lg input {
+  padding: 24px 10px;
+}
+.question-form .form-qua .btn {
+  margin: 0 40px 38px;
+  padding: 20px 49px;
+}
+
 @media screen and (min-width: 768px) {
   .delivery .swiper-pagination.swiper-pagination-bullets.swiper-pagination-horizontal,
   .services .swiper-pagination.swiper-pagination-bullets.swiper-pagination-horizontal {
@@ -779,6 +887,11 @@ input[type=number] {
   .delivery .swiper-nav,
   .services .swiper-nav {
     max-width: 942px;
+  }
+  .questions .qua-elements {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 }
 @media screen and (max-width: 991.9px) {
@@ -1001,6 +1114,43 @@ input[type=number] {
   .about .about-all .about-image {
     min-height: 290px;
     margin: 0 30px;
+  }
+  .questions .qua-elements .questions-accordion .accordion-item {
+    margin-bottom: 14px;
+  }
+  .questions .qua-elements .questions-accordion .accordion-item .accordion-body {
+    padding: 0px 13px 0px 21px;
+  }
+  .questions .qua-elements .questions-accordion .accordion-item .accordion-body .accordion-text {
+    font-size: 14px;
+    line-height: 20px;
+    margin-top: -4px;
+  }
+  .questions .qua-elements .questions-accordion .accordion-button {
+    font-size: 16px;
+    line-height: 20px;
+    padding: 13px 18px 11px 21px;
+  }
+  .questions .qua-elements .questions-accordion .accordion-button::after {
+    margin-bottom: 9px;
+  }
+  .questions .qua-elements .question-form .form-qua .form-title {
+    margin: 38px 15px 8px 15px;
+    text-align: center;
+  }
+  .questions .qua-elements .question-form .form-qua .form-description {
+    margin: 0 15px 23px;
+    text-align: center;
+  }
+  .questions .qua-elements .question-form .form-qua .input-box {
+    width: 295px;
+  }
+  .questions .qua-elements .question-form .form-qua .input-box input {
+    padding: 17px 20px;
+  }
+  .questions .qua-elements .question-form .form-qua .btn {
+    padding: 19px 42px;
+    margin: 0 20px 38px;
   }
 }
 /*# sourceMappingURL=style.css.map */
