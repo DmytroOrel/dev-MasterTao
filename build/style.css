@@ -708,6 +708,62 @@ input[type=number] {
   max-width: 550px;
 }
 
+.questions .template-title {
+  margin-bottom: 13px;
+}
+
+.questions-accordion .accordion {
+  max-width: 716px;
+  width: 100%;
+}
+.questions-accordion .accordion .accordion-item {
+  box-shadow: none;
+  border: 1px solid #6C6F7F;
+  border-radius: 10px;
+  background-color: #fff;
+  margin-bottom: 14px;
+  overflow: hidden;
+}
+.questions-accordion .accordion .accordion-item .accordion-text {
+  font-size: 17px;
+  font-weight: 300;
+  line-height: 24px;
+  color: #282B38;
+  margin-top: -7px;
+}
+.questions-accordion .accordion .accordion-button:not(.collapsed) {
+  background-color: #fff;
+  color: #282B38;
+  transition: 0.2s;
+}
+.questions-accordion .accordion .accordion-button {
+  background-color: #282B38;
+  color: #fff;
+  box-shadow: none;
+  padding: 19px 16px 18px 35px;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 22px;
+}
+.questions-accordion .accordion .accordion-button::after {
+  content: "";
+  background: url(../assets/img/arrow-close-1.svg) center no-repeat;
+  width: 27px;
+  height: 27px;
+}
+.questions-accordion .accordion .accordion-button:not(.collapsed) {
+  background-color: #fff;
+  color: #282B38;
+}
+.questions-accordion .accordion .accordion-button:not(.collapsed)::after {
+  background: url(../assets/img/arrow-open-1.svg) center no-repeat;
+  transform: rotate(360deg);
+  transition: 0.4s;
+}
+.questions-accordion .accordion .accordion-body {
+  padding: 2px 30px 6px 37px;
+}
+
 @media screen and (min-width: 768px) {
   .delivery .swiper-pagination.swiper-pagination-bullets.swiper-pagination-horizontal,
   .services .swiper-pagination.swiper-pagination-bullets.swiper-pagination-horizontal {

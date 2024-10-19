@@ -1,0 +1,61 @@
+ .questions{
+    .template-title{
+        margin-bottom: 13px;
+    }
+ }
+ 
+ 
+ 
+ .questions-accordion{
+        .accordion{
+            max-width: 716px;
+            width: 100%;
+            .accordion-item{
+                box-shadow: none;
+                border: 1px solid $color-secondary;
+                border-radius: 10px;        
+                background-color: $text-cl;
+                margin-bottom: 14px;
+                overflow: hidden;
+                .accordion-text{
+                    font-size: 17px;
+                    font-weight: 300;
+                    line-height: 24px;
+                    color: $body-bg;
+                    margin-top: -7px;
+                }
+            }
+            .accordion-button:not(.collapsed){
+                background-color: $text-cl;
+                color: $body-bg;
+                transition: 0.2s;
+            }
+            .accordion-button{
+                background-color: $body-bg;
+                color: $text-cl;
+                box-shadow: none;
+                padding: 19px 16px 18px 35px;
+                font-size: 18px;
+                font-weight: 700;
+                line-height: 22px;
+                &::after{
+                    content: "";
+                    background: url(../assets/img/arrow-close-1.svg) center no-repeat;
+                    width: 27px;
+                    height: 27px;
+                }
+            }
+            .accordion-button:not(.collapsed){
+                background-color: $text-cl;
+                color: $body-bg;
+            }    
+            .accordion-button:not(.collapsed)::after {
+                background: url(../assets/img/arrow-open-1.svg) center no-repeat;
+                transform: rotate(360deg);
+                transition: 0.4s ;
+            }    
+            .accordion-body {
+                padding: 2px 30px 6px 37px
+        }
+    }    
+ }
