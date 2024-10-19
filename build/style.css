@@ -708,11 +708,18 @@ input[type=number] {
   max-width: 550px;
 }
 
-.questions .template-title {
-  margin-bottom: 13px;
+.questions {
+  padding: 0;
+}
+.questions .qua-elements {
+  display: flex;
+  gap: 34px;
+}
+.questions .qua-elements .template-title {
+  margin-bottom: 9px;
 }
 
-.questions-accordion .accordion {
+.questions-accordion {
   max-width: 716px;
   width: 100%;
 }
@@ -762,6 +769,51 @@ input[type=number] {
 }
 .questions-accordion .accordion .accordion-body {
   padding: 2px 30px 6px 37px;
+}
+
+.question-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.question-form .form-qua {
+  max-width: 390px;
+  max-height: 553px;
+  background-color: #363A4D;
+  border-radius: 20px;
+}
+.question-form .form-qua .form-title {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 30px;
+  margin: 39px 45px 17px 42px;
+}
+.question-form .form-qua .form-description {
+  font-size: 17px;
+  font-weight: 300;
+  line-height: 21px;
+  margin: -10px 45px 23px 42px;
+}
+.question-form .form-qua .input-box,
+.question-form .form-qua .input-box-lg {
+  margin-bottom: 14px;
+  max-width: 310px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.question-form .form-qua .input-box input,
+.question-form .form-qua .input-box-lg input {
+  padding: 17px 10px;
+}
+.question-form .form-qua .input-box-lg {
+  margin-bottom: 25px;
+}
+.question-form .form-qua .input-box-lg input {
+  padding: 24px 10px;
+}
+.question-form .form-qua .btn {
+  margin: 0 40px 38px;
+  padding: 20px 49px;
 }
 
 @media screen and (min-width: 768px) {
