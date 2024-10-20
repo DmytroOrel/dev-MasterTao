@@ -708,9 +708,6 @@ input[type=number] {
   max-width: 550px;
 }
 
-.questions {
-  padding: 0;
-}
 .questions .qua-elements {
   display: flex;
   gap: 34px;
@@ -919,8 +916,17 @@ input[type=number] {
   #advantages .swiper-pagination {
     display: none;
   }
+  .questions {
+    padding-top: 0;
+    padding-bottom: 100px;
+  }
   section {
     padding: 93px 0 100px;
+  }
+}
+@media screen and (max-width: 1250.9px) {
+  .info-start .btn {
+    bottom: 35px;
   }
 }
 @media screen and (max-width: 1199.9px) {
@@ -941,6 +947,37 @@ input[type=number] {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+  }
+  .info-start .first-case {
+    flex-direction: column-reverse;
+    margin-bottom: 15px;
+  }
+  .info-start .first-case .first-info {
+    margin: 0 auto;
+    text-align: start;
+  }
+  .info-start .first-case .img-case_1 {
+    margin-bottom: 20px;
+  }
+  .info-start .first-case .img-case_1 img {
+    width: 100%;
+  }
+  .info-start .second-case {
+    flex-direction: column;
+  }
+  .info-start .second-case .img-case_2 {
+    margin-bottom: 20px;
+  }
+  .info-start .second-case .img-case_2 img {
+    width: 100%;
+  }
+  .info-start .second-case .second-info {
+    margin: 0 auto;
+    text-align: start;
+  }
+  .info-start .btn {
+    bottom: 0px;
+    left: 382px;
   }
 }
 @media screen and (max-width: 991.9px) {
@@ -1072,6 +1109,9 @@ input[type=number] {
   .about .about-all .about-image img {
     height: 290px;
   }
+  .info-start .btn {
+    left: 350px;
+  }
 }
 @media screen and (max-width: 861px) {
   .delivery .swiper-carousel,
@@ -1084,6 +1124,9 @@ input[type=number] {
   .delivery .swiper-nav,
   .services .swiper-nav {
     max-width: 552px;
+  }
+  .info-start .btn {
+    left: 300px;
   }
 }
 @media screen and (max-width: 767.9px) {
@@ -1200,6 +1243,39 @@ input[type=number] {
   .questions .qua-elements .question-form .form-qua .btn {
     padding: 19px 42px;
     margin: 0 20px 38px;
+  }
+  .info-start .template-title {
+    margin-bottom: 13px;
+  }
+  .info-start .first-case .img-case_1 {
+    margin-bottom: -68px;
+  }
+  .info-start .first-case .first-info .info-1 {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    text-align: justify;
+    margin-bottom: 21px;
+  }
+  .info-start .second-case .img-case_2 {
+    margin-bottom: -69px;
+  }
+  .info-start .second-case .second-info {
+    padding: 34px 9px;
+  }
+  .info-start .second-case .second-info .info-2 {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    text-align: justify;
+    margin-bottom: 5px;
+  }
+  .info-start .btn {
+    bottom: 34px;
+    left: 0;
+  }
+  .info-start .btn-lg {
+    padding: 19px 71px;
   }
 }
 /*# sourceMappingURL=style.css.map */
