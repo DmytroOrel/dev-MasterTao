@@ -813,6 +813,9 @@ input[type=number] {
   padding: 20px 49px;
 }
 
+.info-start {
+  margin-bottom: 56px;
+}
 .info-start .bg-section {
   max-height: 1265px;
 }
@@ -860,6 +863,56 @@ input[type=number] {
   position: relative;
   bottom: 90px;
   left: 603px;
+}
+
+.footer-row {
+  border-top: 2px solid #E58D35;
+}
+.footer-row .content-box {
+  display: flex;
+  margin-top: 40px;
+}
+.footer-row .content-box li::marker {
+  color: transparent;
+}
+.footer-row .content-box .page-contact {
+  margin-right: 12px;
+}
+.footer-row .content-box .img-contact {
+  margin-bottom: 29px;
+}
+.footer-row .content-box .info-back {
+  font-size: 14px;
+  line-height: 162%;
+  padding: 0;
+}
+.footer-row .content-box .info-back .info-list {
+  margin-bottom: 1px;
+}
+.footer-row .content-box .footer-link {
+  margin-bottom: 30px;
+}
+.footer-row .content-box .footer-link a {
+  margin-left: 2px;
+}
+.footer-row .content-box .page-nav {
+  margin: -4px -9px 0px 64px;
+}
+.footer-row .content-box .page-nav .nav-title {
+  margin-left: 30px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 146%;
+  margin-bottom: 13px;
+}
+.footer-row .content-box .page-nav .list-nav {
+  margin-bottom: 6px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 161%;
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
+  color: #85899c;
 }
 
 @media screen and (min-width: 768px) {

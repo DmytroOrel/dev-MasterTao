@@ -1,0 +1,51 @@
+.footer-row{
+    border-top: 2px solid $primary-cl;
+    .content-box{
+        display: flex;
+        margin-top: 40px;
+        li{
+            &::marker{
+                color: transparent;
+            }
+        }    
+        .page-contact{
+            margin-right: 12px;
+        }
+        .img-contact{
+            margin-bottom: 29px;
+        }
+        .info-back{
+            font-size: 14px;
+            line-height: 162%;
+            padding: 0;
+            .info-list{
+                margin-bottom: 1px;
+            }
+        }
+        .footer-link{
+            margin-bottom: 30px;
+            a{
+                margin-left: 2px;
+            }
+        }
+        .page-nav{
+            margin: -4px -9px 0px 64px;
+            .nav-title{
+                margin-left: 30px;
+                font-weight: 700;
+                font-size: 20px;
+                line-height: 146%;
+                margin-bottom: 13px;
+            }
+            .list-nav{
+                margin-bottom: 6px;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 161%;
+                text-decoration: underline;
+                text-decoration-skip-ink: none;
+                color: #85899c;                
+            }
+        }
+    }
+}
