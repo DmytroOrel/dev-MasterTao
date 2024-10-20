@@ -867,6 +867,7 @@ input[type=number] {
 
 .footer-row {
   border-top: 2px solid #E58D35;
+  margin-bottom: 40px;
 }
 .footer-row .content-box {
   display: flex;
@@ -1032,6 +1033,15 @@ input[type=number] {
     bottom: 0px;
     left: 382px;
   }
+  .footer-row .content-box {
+    padding: 0 15px;
+  }
+  .footer-row .content-box .page-contact {
+    margin-right: auto;
+  }
+  .footer-row .content-box .page-nav {
+    margin: 0 auto;
+  }
 }
 @media screen and (max-width: 991.9px) {
   .container {
@@ -1164,6 +1174,13 @@ input[type=number] {
   }
   .info-start .btn {
     left: 350px;
+  }
+  .footer-row .content-box .page-contact {
+    margin: 0 auto;
+    text-align: center;
+  }
+  .footer-row .content-box .page-nav {
+    display: none;
   }
 }
 @media screen and (max-width: 861px) {
