@@ -1,3 +1,14 @@
+@media screen and (max-width: 1250.9px){
+    .info-start{
+        .btn{
+            bottom: 35px;
+        }
+    }
+
+}
+
+
+
 @media screen and (max-width: 1199.9px) {
     .navbar-custom{
         .nav-item{
@@ -26,4 +37,39 @@
             align-items: center;
         }
     }
+
+    .info-start{
+        .first-case{
+            flex-direction: column-reverse;
+            margin-bottom: 15px;
+            .first-info{
+                margin: 0 auto;
+                text-align: start;
+            }
+            .img-case_1{
+                margin-bottom: 20px;
+                img{
+                    width: 100%;
+                }
+            }
+        }
+        .second-case{
+            flex-direction: column;
+            .img-case_2{
+                margin-bottom: 20px;
+                img{
+                    width: 100%;
+                }
+            }
+            .second-info{
+                margin: 0 auto;
+                text-align: start;
+            }
+        }
+        .btn{
+            bottom: 0px;
+            left: 382px;
+        }
+    }
 }
+

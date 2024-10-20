@@ -10,6 +10,12 @@
             max-width: 552px;
         }
     }
+
+    .info-start{
+        .btn{
+            left: 300px;
+        }
+    }
 }
 @media screen and (max-width: 767.9px) {
     .calculation{
@@ -170,5 +176,47 @@
         }
     }
 }
+}
+
+.info-start{
+    .template-title{
+        margin-bottom: 13px;
+    }
+    .first-case{
+        .img-case_1{
+            margin-bottom: -68px;
+        }
+        .first-info{
+            .info-1{
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 150%;
+                text-align: justify;
+                margin-bottom: 21px;
+            }
+        }
+    }
+    .second-case{
+        .img-case_2{
+            margin-bottom: -69px;
+        }
+        .second-info{
+            padding: 34px 9px;
+            .info-2{
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 150%;
+                text-align: justify;
+                margin-bottom: 5px;
+            }
+        }
+    }
+    .btn{
+        bottom: 34px;
+        left: 0;
+    }
+    .btn-lg{
+        padding: 19px 71px;
+    }
 }
 }
