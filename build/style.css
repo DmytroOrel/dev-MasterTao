@@ -1291,7 +1291,7 @@ input[type=number] {
     margin-bottom: 14px;
   }
   .questions .qua-elements .questions-accordion .accordion-item .accordion-body {
-    padding: 0px 13px 0px 21px;
+    padding: 0px 13px 1px 21px;
   }
   .questions .qua-elements .questions-accordion .accordion-item .accordion-body .accordion-text {
     font-size: 14px;
@@ -1304,7 +1304,7 @@ input[type=number] {
     padding: 13px 18px 11px 21px;
   }
   .questions .qua-elements .questions-accordion .accordion-button::after {
-    margin-bottom: 9px;
+    margin-bottom: 5px;
   }
   .questions .qua-elements .question-form .form-qua .form-title {
     margin: 38px 15px 8px 15px;

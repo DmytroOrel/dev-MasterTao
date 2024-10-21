@@ -136,7 +136,7 @@
         .accordion-item{
             margin-bottom: 14px;
             .accordion-body{
-                padding: 0px 13px 0px 21px;        
+                padding: 0px 13px 1px 21px;        
                 .accordion-text{
                 font-size: 14px;
                 line-height: 20px;
@@ -149,7 +149,7 @@
             line-height: 20px;
             padding: 13px 18px 11px 21px;     
             &::after{
-                margin-bottom: 9px;
+                margin-bottom: 5px;
             }   
         }
     }
