@@ -451,6 +451,9 @@ input[type=number] {
 .advantages {
   padding-bottom: 68px;
 }
+.advantages .template-title::before {
+  background-color: #E58D35;
+}
 .advantages .row {
   padding-top: 15px;
 }
@@ -458,7 +461,7 @@ input[type=number] {
 .advantage {
   min-height: 201px;
   text-align: center;
-  max-width: 263px;
+  min-width: 263px;
   margin: 0 auto 26px;
 }
 .advantage .advantage-img {
@@ -638,6 +641,9 @@ input[type=number] {
   bottom: 10px;
 }
 
+.services .template-title::before {
+  background-color: #E58D35;
+}
 .services .swiper-service .card {
   position: relative;
   flex-direction: column;
@@ -708,6 +714,9 @@ input[type=number] {
   max-width: 550px;
 }
 
+.questions .template-title::before {
+  background-color: #E58D35;
+}
 .questions .qua-elements {
   display: flex;
   gap: 34px;
@@ -724,7 +733,7 @@ input[type=number] {
   box-shadow: none;
   border: 1px solid #6C6F7F;
   border-radius: 10px;
-  background-color: #fff;
+  background-color: transparent;
   margin-bottom: 14px;
   overflow: hidden;
 }
@@ -751,7 +760,7 @@ input[type=number] {
 }
 .questions-accordion .accordion .accordion-button::after {
   content: "";
-  background: url(../assets/img/arrow-close-1.svg) center no-repeat;
+  background: url("assets/img/arrow-close-1.svg") center no-repeat;
   width: 27px;
   height: 27px;
 }
@@ -760,12 +769,13 @@ input[type=number] {
   color: #282B38;
 }
 .questions-accordion .accordion .accordion-button:not(.collapsed)::after {
-  background: url(../assets/img/arrow-open-1.svg) center no-repeat;
+  background: url("assets/img/arrow-open-1.svg") center no-repeat;
   transform: rotate(360deg);
   transition: 0.4s;
 }
 .questions-accordion .accordion .accordion-body {
   padding: 2px 30px 6px 37px;
+  background-color: white;
 }
 
 .question-form {
@@ -1339,6 +1349,9 @@ input[type=number] {
     line-height: 150%;
     text-align: justify;
     margin-bottom: 5px;
+  }
+  .info-start li::marker {
+    color: #fff;
   }
   .info-start .btn {
     bottom: 34px;

@@ -1,4 +1,9 @@
 .services{
+    .template-title{
+        &::before{
+            background-color: $primary-cl;
+        }
+    }
     .swiper-service{
     .card{
         position: relative;

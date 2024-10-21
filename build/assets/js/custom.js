@@ -20,6 +20,10 @@ const swiper = new Swiper('#banner-slider', {
   },
 });
 
+
+
+
+
 const swiperAdvantages = new Swiper('#advantages', {
   loop: true,
   slidesPreView: 1,
@@ -43,6 +47,14 @@ const swiperAdvantages = new Swiper('#advantages', {
     }
   }
 });
+
+
+
+
+
+
+
+
 
 const swiperSwiperCarousel = new Swiper('.swiper-carousel', {
   speed: 400,

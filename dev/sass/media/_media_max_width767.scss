@@ -211,6 +211,11 @@
             }
         }
     }
+    li{
+        &::marker{
+            color: $text-cl;
+        }
+    }
     .btn{
         bottom: 34px;
         left: 0;

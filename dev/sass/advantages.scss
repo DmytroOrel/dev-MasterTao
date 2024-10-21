@@ -1,4 +1,9 @@
 .advantages{
+    .template-title{
+        &::before{
+            background-color: $primary-cl;
+        }
+    }
     padding-bottom: 68px;
     .row{
         padding-top: 15px;
@@ -7,7 +12,7 @@
 .advantage{
     min-height: 201px;
     text-align: center;
-    max-width: 263px;    
+    min-width: 263px;    
     margin: 0 auto 26px;
 
     .advantage-img{
